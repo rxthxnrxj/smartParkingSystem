@@ -54,7 +54,7 @@ def user(request):
     form = AddressForm()
     if request.method == 'POST':
         address = request.POST.get("address")
-        API_KEY = 'AIzaSyAVa48cs0z3CoK4oicdRBFQJY_ew7DJ-C8'
+        API_KEY = 'XXXXXXXXXXXXXXXXXXXXXXXXX'
         URL = f'https://maps.googleapis.com/maps/api/geocode/json?address={address}&key={API_KEY}'
         results = requests.get(URL)
         if results.status_code == 200:
